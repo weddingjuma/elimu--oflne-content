@@ -1,0 +1,305 @@
+﻿
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Exams </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <meta name="description" content="KCPE past papers from 2000 to 2015
+    complete with answers, explanations and revision
+    of topics">
+    <meta name="keywords" content="
+    KCPE,
+    Exams,
+    Past papers,
+    KNEC,
+    Kenya National Examination Council,
+    Kenya Certificate of Primary Education,
+    Kenya,
+    Revision,
+    Marking scheme,
+    Questions,
+    Answers,
+    Explanations,
+    English,
+    Kiswahili,
+    Maths,
+    Mathematics,
+    Social studies,
+    Religious Education,
+    CRE,
+    IRE,
+    HRE,
+    Science,
+    KCPE 2000, KCPE 2001,
+    KCPE 2002, KCPE 2003,
+    KCPE 2004, KCPE 2005,
+    KCPE 2006, KCPE 2007,
+    KCPE 2008, KCPE 2009,
+    KCPE 2010, KCPE 2011,
+    KCPE 2012, KCPE 2013,
+    KCPE 2014, KCPE 2015,
+    KCPE 2016, Schoools, ">
+
+    
+
+    <!--css links start-->
+
+    <link rel="stylesheet" type="text/css" href="..\static\silot\css\ie.css">
+
+    <link rel="stylesheet" type="text/css" href="..\static\silot\css\featured.css">
+
+    <link rel="stylesheet" type="text/css" href="..\static\silot\css\corner-ribbon.css">
+
+    <link rel="stylesheet" type="text/css" href="..\static\webapp\css\elimu.css">
+
+    <link rel="stylesheet" type="text/css" href="..\static\webapp\css\style.css">
+
+    <link type="image/x-icon" rel="shortcut icon" href="http://e-limu.org/wp-content/themes/teacher/favicon.ico">
+
+    <link href="..\static\exams\bootstrap\css\bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="..\static\exams\css\style.css" rel="stylesheet">
+
+    <link href="..\static\exams\jquery\jquery-ui.min.css" rel="stylesheet">
+
+    <link href="..\static\exams\css\exams.css" rel="stylesheet">
+
+    <link href="..\static\exams\css\signup.css" rel="stylesheet">
+    <!--loading animation-->
+    <link href="..\static\exams\css\loading_animation.css" rel="stylesheet">
+
+    <link href="..\static\exams\css\text-animation.css" rel="stylesheet">
+
+
+    <!-- select2 css -->
+
+    <link href="..\static\exams\css\select2.min.css" rel="stylesheet">
+
+    <link href="..\static\exams\css\toastr.min.css" rel="stylesheet">
+
+
+    <!--css links end-->
+       
+
+    <script src="..\static\exams\jquery\jquery.min.js"></script>
+    <script src="..\static\exams\js\MathJax.js"></script>
+   <script src="..\static\exams\js\toastr.min.js"></script>
+    <script src="..\static\exams\js\momentjs.js"></script>
+
+    <!--js for creating circular graphs-->
+    <script src="..\static\exams\js\jquery.circliful.min.js"></script>
+
+    <script src="..\static\exams\bootstrap\js\bootstrap.min.js"></script>
+
+
+    <!-- bootstrap js -->
+
+    <script src="..\static\exams\js\bootstrap-combobox.js"></script>
+
+    <script src="..\static\exams\js\hashtable.js"></script>
+
+    <script src="..\static\exams\js\jquery-timer.js"></script>
+
+    <script src="..\static\exams\js\date.js"></script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65997234-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+   <!--<script src="https://elimufeynman.s3-us-west-2.amazonaws.com/static/exams/js/prevent-pull-refresh.js"></script>-->
+
+    <!--<script src="https://elimufeynman.s3-us-west-2.amazonaws.com/static/exams/js/cache-response.min.js"></script>
+    <script src="https://elimufeynman.s3-us-west-2.amazonaws.com/static/exams/js/jalc.min.js"></script> -->
+
+</head>
+
+<body>
+
+
+<!--quizzes header start-->
+<div class="container-fluid">
+
+    <div class="row" id="header">
+        <div class="col-xs-6">
+         <span class="logo-title">
+            <a href="http://e-limu.org/">
+                <img class="img logo" src="..\static\exams\images\logo_v1.png" style="height: auto; width: auto">
+            </a>
+         </span>
+        </div>
+
+        <div class="col-xs-6">
+
+            <!--<span class="learn-link"><a href="http://learn.e-limu.org">learn.e-limu.org</a></span>-->
+
+        </div>
+    </div>
+
+</div>
+
+
+<!--quizzes header end-->
+
+
+<!--orange space below header-->
+
+
+<div class="container-fluid space-below-header">
+
+   <div class="row">
+
+      <div class="col-xs-6">
+        <div class="right-header-links">
+            <a href="..\index.html">Learn</a>&nbsp;&nbsp;<slash>/</slash>&nbsp;&nbsp;
+
+            <a href="/exams">Exams</a>&nbsp;&nbsp;<slash id="second-slash"></slash>
+
+            <span id="all-subject-exams"></span>
+        </div>
+      </div>
+
+      <div class="col-xs-6 text-right" id="student-account-section">
+
+            <!--<div class="col-xs-6 text-right">-->
+
+                    <!-- Single button -->
+                    <div class="btn-group student-account-list pull-right">
+                      <button type="button" class="btn btn-primary btn-lg dropdown-toggle pull-right" data-toggle="dropdown" style=" background-color: #ed5729; border-width: 0px; margin-left: 5%">
+                        <span id="menu"></span> &nbsp;&nbsp;<img class="img-responsive menu-img" id="img_logo" src="..\static\exams\images\ham.svg">
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li id="student-account" class="account-list">
+                        <img class="img-responsive list-img" id="img_logo" src="..\static\exams\images\settings.png">&nbsp;&nbsp;<span>Account</span>
+                        </li>
+                        <li>&nbsp;</li>
+                        <li id="student-performance" class="account-list">
+                          <img class="img-responsive list-img" id="img_logo" src="..\static\exams\images\results-2b.png">&nbsp;&nbsp;<span>Performance</span>
+                        </li>
+                        <li>&nbsp;</li>
+                        <li id="student-feedback" class="account-list">
+                           <img class="img-responsive list-img" id="img_logo" src="..\static\exams\images\feedback4.png">&nbsp;&nbsp;<span>Contact us</span>
+                        </li>
+                        <li class="divider"></li>
+                        <li id="student-logout" class="account-list">
+                            <img class="img-responsive list-img" id="img_logo" src="..\static\exams\images\lock.svg">&nbsp;&nbsp;<span>Logout</span>
+                        </li>
+
+                      </ul>
+                    </div>
+
+            <!--</div>-->
+
+
+      </div>
+
+   </div>
+
+</div>
+
+
+
+
+
+<div class="container-fluid">
+
+    <div class="row" id="lead-wrapper">
+
+        <div class="col-sm-12 choose-subject">
+
+            <span id="lead-instruction"></span>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-sm-12" id="subjects-list">
+            <div class="cssload-loader" style="margin-top: 8%">Loading subjects</div>
+            <script type="text/javascript">
+                if (/Opera Mini/i.test(navigator.userAgent) === true){
+                    $('#subjects-list').append(
+
+                            '<div> Sorry, exams are not yet supported on Opera Mini, please use another browser.'+
+                            'You can still revise thousands of topics covering the whole curriculum at: http://learn.e-limu.org </div>'
+
+                        );
+                    $('.cssload-loader').hide();
+                }
+            </script>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script type="text/javascript">
+    $(function () {
+
+                $('#id_date_of_birth').datepicker({
+                    format: "YYYY/MM/d"
+                    });
+            });
+</script>
+
+
+<!--block footer start-->
+<!--
+<div class="container-fluid" if="footer">
+    <div class="row">
+        <div class="footer navbar-fixed-bottom footer-custom">
+            <p id="footer">&copy;&nbsp;&nbsp; 2016 eLimu eLearning Company Limited.</p>
+        </div>
+    </div>
+</div>
+
+-->
+
+
+<!--footer end-->
+<!--js links start-->
+
+<script src="..\static\exams\jquery\jquery-ui.min.js"></script>
+
+<script src="..\static\exams\js\exams_v1.js"></script>
+
+<script src="..\static\exams\js\chainedfk.js"></script>
+
+<script src="..\static\exams\js\jquery_widget.js"></script>
+
+
+<script src="..\static\exams\js\notify.min.js"></script>
+
+<script src="..\static\exams\js\user_profile.js"></script>
+
+<script src="..\static\exams\js\select2.min.js"></script>
+
+<script src="..\static\exams\js\signup.js"></script>
+
+<script src="..\static\exams\js\auth_reset.js"></script>
+
+<script src="..\static\exams\js\wheelzoom.js"></script>
+
+
+<!--js links end-->
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿/***
+font for the home page only i.e silot/index.html
+*/
+
+@font-face {
+    font-family: 'handybold';
+    src: url('../fonts/handy_bold-webfont.eot');
+    src: url('../fonts/handy_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/handy_bold-webfont.hxd') format('woff2'),
+         url('../fonts/handy_bold-webfont.woff') format('woff'),
+         url('../fonts/handy_bold-webfont-1.hxd') format('truetype'),
+         url('../fonts/handy_bold-webfont.svg') format('svg');
+    /*font-weight: bold;
+    font-style: normal;*/
+
+}
+
+p, li{font-family: 'handybold'; font-size: 16px;}
+h1,h2,h3,h4{font-family: 'handybold';  font-weight: bold;}

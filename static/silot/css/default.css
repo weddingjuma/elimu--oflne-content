@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+
+.margin-bottom{
+	margin-bottom: 20px;
+}
+
+img{ max-width:100%;}
+#elimu-logo { margin: 0% 0 0 0; max-width: 100%; }
+#elimu-logo img { width: 300px; }
+a{ color:inherit;}
+a:hover{ text-decoration:none;}
+#wrapper{ background-color:#000; repeat; width:100%; min-height:100%; color:#FFF; overflow:hidden; height: auto;}
+header{ margin-top:40px; margin-bottom:20px;}
+#wrapper-subjects{
+	height: auto;
+}
+footer{ background:url(../images/bg_footer.jpg) repeat; width:100%; position:relative;}
+.footer-top{ background:url(../images/bg_footer_top.jpg) repeat-x; width:100%; height:120px;}
+footer h2{ margin-top: -10px;}
+footer a{color:#337ab7;}
+li{ margin-bottom:5px; font-weight:bold;}
+
+.subject {
+  margin:25px 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+  /*width: 200px;*/
+  max-width: 100%;
+	width: 45vw;
+	height: 45vw;
+	border-style: solid;
+	border-width: 10px;
+	-moz-border-image: url(../images/border.png) 10 stretch;
+	-webkit-border-image: url(../images/border.png) 10 stretch;
+	-o-border-image: url(../images/border.png) 10 stretch;
+	border-image: url(../images/border.png) 10 fill stretch;
+}
+
+.subject h4{
+	text-align:center;
+	margin:0;
+	font-weight:bold;
+	color:#FFF;
+	padding:0 10px;
+	padding-top: 4%;
+	line-height: 150%;
+	font-size: 2.6em;
+	}
+.subject img{
+	margin-left: 20%;
+	margin-right: auto;
+	width: 25vw;
+	height: 25vw;
+}
+
+@media(min-width: 992px){
+ .subject {
+  margin:25px 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+  width: 160px;
+  max-width: 100%;
+  height: 170px;
+	border-style: solid;
+	border-width: 10px;
+	-moz-border-image: url(../images/border.png) 10 stretch;
+	-webkit-border-image: url(../images/border.png) 10 stretch;
+	-o-border-image: url(../images/border.png) 10 stretch;
+	border-image: url(../images/border.png) 10 fill stretch;
+}
+
+.subject img{
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	height: auto;
+}
+.subject h4{
+	text-align:center;
+	margin:0;
+	font-weight:bold;
+	font-size: large;
+	color:#FFF;
+	padding:0 10px;
+	padding-top: inherit;
+	line-height: 150%}
+}
+
+.subject:hover {
+	-moz-border-image: url(../images/bg_icon.png) 10 stretch;
+	-webkit-border-image: url(../images/bg_icon.png) 10 stretch;
+	-o-border-image: url(../images/bg_icon.png) 10 stretch;
+	border-image: url(../images/bg_icon.png) 10 fill stretch;
+	}
+
+.subject:hover img{ 
+filter: contrast(0) brightness(0);
+	-webkit-filter: contrast(0) brightness(0);
+	-moz-filter: contrast(0) brightness(0);
+	-o-filter: contrast(0) brightness(0);
+	-ms-filter: contrast(0) brightness(0);
+
+}
+	
+.subject:hover h4{ color:#222222; text-decoration:none;}
+
+#grown-ups{ min-height:210px; margin:7% 0 0;}
+#grown-ups p{ margin-bottom: 20px; }
+.prop{ max-width:60%; }
+#grown-ups .prop{top:-50px; position:absolute; max-width:none;}
+#other-links{ margin-top:60px;}
+.link{ text-align:center;}
+.link a:hover h4{ color:#FFF;}
+.link img{
+filter: grayscale(100%) brightness(200%); 
+	-webkit-filter: grayscale(100%) brightness(200%);
+	-moz-filter: grayscale(100%) brightness(200%);
+	-o-filter: grayscale(100%) brightness(200%);
+	-ms-filter: grayscale(100%) brightness(200%);
+}
+.link:hover img{
+filter: grayscale(0) brightness(1); 
+	-webkit-filter: grayscale(0) brightness(1);
+	-moz-filter: grayscale(0) brightness(1);
+	-o-filter: grayscale(0) brightness(1);
+	-ms-filter: grayscale(0) brightness(1);
+}
+
+#wrapper-tablet{}
+#wrapper-tablet img{ margin-right: 40px; margin-top: -8%; width: 400px;}
+
+@media (max-width: 767px) {
+
+footer h2{ margin-top:43px; margin-bottom:30px;}
+#footer-menus .col-sm-3:nth-child(2) h2{ margin-top:-35px; margin-bottom:27px;}
+footer ul{ margin-bottom:40px;}
+#wrapper-tablet img{ margin-top:0;}
+#wrapper, footer{ padding:0 30px;}
+#elimu-logo{ text-align:center; margin:0 0 35px;}
+}
